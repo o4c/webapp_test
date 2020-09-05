@@ -1,0 +1,69 @@
+{
+  "customClientConfig": {
+    "title": "Simple webapp",
+    "general": {
+      "appDownloadEnabled": true,
+      "iosB2B": true
+    }
+  },
+  "customI18nConfig": {
+    "defaultLang": "nl",
+    "langs": [
+      "nl",
+      "en"
+    ]
+  },
+  "serverConfig": {
+    "platform": {
+      "app_version": "1.0.0"
+    },
+    "profiles": {
+      "fields": {
+        "language": {
+          "path": "language",
+          "type": "multiple_select"
+        },
+        "groups": {
+          "path": "groups",
+          "type": "multiple_select"
+        },
+        "completed_wizards": {
+          "path": "completedWizards",
+          "type": "multiple_select"
+        },
+        "profile_image": {
+          "path": "profileImageUrl",
+          "type": "image"
+        },
+        "first_name": {
+          "path": "firstName",
+          "type": "text"
+        },
+        "middle_name": {
+          "path": "middleName",
+          "type": "text"
+        },
+        "last_name": {
+          "path": "lastName",
+          "type": "text"
+        },
+        "variation_language": {
+          "path": "variationLanguage",
+          "type": "variation_language_select"
+        },
+        "imgzineNotifications": {
+          "path": "imgzineNotifications",
+          "type": "object"
+        },
+        "tickets": {
+          "path": "tickets",
+          "type": "object"
+        },
+        "consent": {
+          "path": "app.consent",
+          "type": "object"
+        }
+      }
+    }
+  }
+}

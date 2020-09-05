@@ -1,0 +1,1 @@
+node_modules/@imgzine/imgzine-react-webcore/config-sample.js

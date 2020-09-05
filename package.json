@@ -1,0 +1,31 @@
+{
+  "name": "skeleton-webapp",
+  "version": "2.10.2",
+  "description": "skeleton webbapp",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.imgzine.com:7999/iwa/skeleton.git/webapp"
+  },
+  "main": "start.js",
+  "scripts": {
+    "start": "NODE_ENV=production node start.js",
+    "prod": "npm run build && npm start",
+    "build:hashes": "node node_modules/@imgzine/imgzine-react-webcore/dist/domain/tools/computeProjectAssets.js",
+    "build": "rimraf dist && ts-node src/buildConfig && npm run build:hashes"
+  },
+  "author": "Christos Pappas",
+  "license": "ISC",
+  "dependencies": {
+    "@imgzine/imgzine-react-webcore": "2.10.2"
+  },
+  "devDependencies": {
+    "@types/connect-redis": "0.0.7",
+    "@types/i18next": "8.4.4",
+    "@types/lodash": "4.14.116",
+    "@types/react-router-dom": "4.3.0",
+    "lodash": "^4.17.20",
+    "rimraf": "^2.6.2",
+    "ts-node": "^8.5.2",
+    "typescript": "~2.8.4"
+  }
+}
